@@ -1,0 +1,52 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+.box {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.label {
+  /* display: inline-block; */
+  display: flex;
+  align-items: space-between;
+  gap: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+.like__heart {
+  padding-left: 10px;
+}
+
+.like__heart:before {
+  content: "\f08a";
+  content: "♡";
+
+  font-family: fontAwesome;
+  color: gray;
+}
+
+:checked + .like__heart:before {
+  /* content: "\f004";
+   */
+  content: "❤";
+  color: red;
+}
